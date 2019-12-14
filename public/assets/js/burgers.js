@@ -11,15 +11,15 @@ $(document).ready(function () {
         var len = burgers.length;
 
         for (var i = 0; i < len; i++) {
-            var devourButton = "<li><h4>" + burgers[i].id + "." + burgers[i].burger_name +
-                "<button data-burgerid='" + burgers[i].id + "'class='eatburger btn btn-warning'" + "' data-devour='" + !burgers[i].devoured + "'>DEVOUR IT!";
+            var devourButton = "<li>" + burgers[i].id + "." + burgers[i].burger_name +
+                "<button data-burgerid='" + burgers[i].id + "'class='eatburger btn btn-warning'" + "' data-devour='" + !burgers[i].devoured + "'>Devour!";
 
             if (!burgers[i].devoured) {
                 allburgers.append(devourButton);
             }
-            devourButton += "</button></h4></li>";
+            devourButton += "</button></li>";
 
-            var deleteButton = "<li>" + burgers[i].burger_name + "<button class ='trashburger btn btn-danger' data-id='" + burgers[i].id + "'>DELETE";
+            var deleteButton = "<li>" + burgers[i].burger_name + "<button class ='trashburger btn btn-danger' data-id='" + burgers[i].id + "'>Delete";
 
             if (burgers[i].devoured) {
                 devouredBurger.append(deleteButton);
