@@ -1,0 +1,23 @@
+{
+  "name": "websocials",
+  "version": "1.0.0",
+  "description": "Eat-Da-Burger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZekeriyaOtumlu/websocials.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZekeriyaOtumlu/websocials/issues"
+  },
+  "homepage": "https://github.com/ZekeriyaOtumlu/websocials#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.17.1"
+  }
+}

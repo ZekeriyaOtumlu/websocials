@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/burger_style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="assets/js/burgers.js"></script>
+    <title>Eat Da Burger</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1>Eat the Burger</h1>
+            <p>Fresh Burgers Here.</p>
+            <br>
+            <h2>Make a Burger</h2>
+            <form class="create-form">
+
+                <div id="addNewBurger" class="form-group">
+                    <label for="newburger">New Burger:</label>
+                    <input type="text" id="newburger" name="burger">
+                </div>
+                <button type="submit" id="addBurgerBtn">Add Burger</button>
+            </form>
+        </div><!-- /jumbotron -->
+
+        <div class="row">
+            <!-- Undevoured Burgers -->
+            <div class="col-sm-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="lefthead"><strong>New Burgers</strong></div>
+                    <div class="panel-body">
+                        <ul id="allBurgers">
+
+                        </ul>
+                        <!-- <button type="button" class="eatburger btn btn-warning" id="eatbutton">DEVOUR IT!</button>
+                            <hr>
+                           -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- Devoured Burgers -->
+            <div class="col-sm-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="righthead"><strong>Devoured Burgers</strong></div>
+                    <div class="panel-body">
+                        <ul id="trashBurger">
+                        </ul>
+
+                        <!-- <button type="button" class="trashburger btn btn-danger" id="trashbutton">DELETE</button>
+                            <hr> -->
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+
+    <footer class=" center footer">
+        <div class="container">
+            <p> copyright © Eat-Da-Burger App December 2019</p>
+        </div>
+    </footer>
+</body>
+
+</html>
