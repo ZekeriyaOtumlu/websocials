@@ -46,3 +46,23 @@ h1 {
 .jumbotron {
     color: palegoldenrod;
 }
+
+
+
+.eatburger,
+.trashburger{
+    margin-left:30px;
+}
+
+/* .allBurgers,
+.trashBurger {
+    list-style: none;
+
+}
+
+
+.burgersDiv{
+
+border:1px solid gray;
+margin-left:10px;
+}  */

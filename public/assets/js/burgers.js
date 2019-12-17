@@ -11,20 +11,20 @@ $(document).ready(function () {
         var len = burgers.length;
 
         for (var i = 0; i < len; i++) {
-            var devourButton = "<li>" + burgers[i].id + "." + burgers[i].burger_name +
+            var devourButton = "<li><div class='burgersDiv'>" + burgers[i].id + "." + burgers[i].burger_name +
                 "<button data-burgerid='" + burgers[i].id + "'class='eatburger btn btn-warning'" + "' data-devour='" + !burgers[i].devoured + "'>Devour!";
 
             if (!burgers[i].devoured) {
                 allburgers.append(devourButton);
             }
-            devourButton += "</button></li>";
+            devourButton += "</button></div></li>";
 
-            var deleteButton = "<li>" + burgers[i].burger_name + "<button class ='trashburger btn btn-danger' data-id='" + burgers[i].id + "'>Delete";
+            var deleteButton = "<li><div class='burgersDiv'>" + burgers[i].burger_name + "<button class ='trashburger btn btn-danger' data-id='" + burgers[i].id + "'>Delete";
 
             if (burgers[i].devoured) {
                 devouredBurger.append(deleteButton);
             }
-            deleteButton += "</button></li>";
+            deleteButton += "</button></div></li>";
         }
     });
 
