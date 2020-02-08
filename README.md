@@ -8,7 +8,8 @@
 ![EatDaBurger](https://user-images.githubusercontent.com/45694823/72310232-3eac0a80-364f-11ea-9202-562813b7ee7a.PNG)
 
 To view the app go to:
- https://enigmatic-plains-06220.herokuapp.com/
+
+https://enigmatic-plains-06220.herokuapp.com/
 
 https://github.com/ZekeriyaOtumlu/websocials
 
